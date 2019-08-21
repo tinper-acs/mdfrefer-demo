@@ -4,9 +4,9 @@
 
 import React,{Component} from 'react';
 import { render } from 'mirrorx';
-import {TreeDemo1,TreeDemo2,TreeDemo3} from './components/Ref/MdfReferTree'
-import {TableDemo1,TableDemo2,TableDemo3} from './components/Ref/MdfReferTable'
-import {TreeTableDemo1,TreeTableDemo2,TreeTableDemo3} from './components/Ref/MdfReferTreeTable'
+import {TreeDemo1,TreeDemo2,TreeDemo3,TreeDemo4} from './components/Ref/MdfReferTree'
+import {TableDemo1,TableDemo2,TableDemo3,TableDemo4} from './components/Ref/MdfReferTable'
+import {TreeTableDemo1,TreeTableDemo2,TreeTableDemo3,TreeTableDemo4} from './components/Ref/MdfReferTreeTable'
 import {JLDemo1,JLDemo2} from './components/Ref/MdfReferJiLian';
 // 全局样式
 import './app.less';
@@ -33,6 +33,9 @@ class MdfReferDemo extends Component{
                 <div className="demo-col">
                     <TreeDemo3/>
                 </div>
+                <div className="demo-col">
+                    <TreeDemo4/>
+                </div>
             </div>
             <h2>表参照</h2>
             <div className={`demo-row `}>
@@ -45,6 +48,9 @@ class MdfReferDemo extends Component{
                 <div className="demo-col">
                     <TableDemo3/>
                 </div>
+                <div className="demo-col">
+                    <TableDemo4/>
+                </div>
             </div>
             <h2>树表参照</h2>
             <div className={`demo-row `}>
@@ -56,6 +62,9 @@ class MdfReferDemo extends Component{
                 </div>
                 <div className="demo-col">
                     <TreeTableDemo3/>
+                </div>
+                <div className='demo-col'>
+                    <TreeTableDemo4/>
                 </div>
             </div>
             <h2>级联场景</h2>
