@@ -1,0 +1,92 @@
+@import '~static/mdf-refer/index.css';//就是mdf-refer的indexcss样式
+
+#app h2{
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+}
+.demo{
+    padding: 10px;
+
+    &-col{
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 10px;
+        width: 30%;
+        &>span{
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-left: 10px;
+        }
+        .ref-filter-item:hover{
+            background: #ebecf0;
+            cursor: pointer;
+        }
+        .ref-filter-item:active{
+            background: rgb(255, 247, 231);
+        }
+
+    }
+    &-label{ 
+        vertical-align: top;
+        width: 350px;
+        height: 50px;
+        &>span{
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+        .ref-input-wrap .u-input-group.simple .u-input-group-btn {
+            min-width: 20px;
+        }
+
+    }
+    &-label-require{ 
+        vertical-align: top;
+        width: 350px;
+        height: 50px;
+        position: relative;
+        &>.labelDiv{
+            width: 150px;
+            position: relative;
+            display: inline-block;
+            height: 32px;
+            &>.label{
+                display: inline-block;
+                max-width: 135px;
+                text-align: left;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                top: 6px;
+                position: relative;
+            }
+            &>.mast{
+                width: 5px;
+                display: inline-block;
+                min-width: auto;
+                margin-right: 5px;
+                color: red;
+                margin-left: 4px;
+            }
+        }
+        &>.error{
+            position: absolute;
+            left: 150px;
+            top: 30px;
+            margin-left: 0;
+            font-size: 12px;
+            color: red;
+        }
+        .ref-input-wrap .u-input-group.simple .u-input-group-btn {
+            min-width: 20px;
+        }
+    }
+}
+
+
+
+.u-modal  .u-modal-content{
+    transform: none !important;
+}
