@@ -8,6 +8,7 @@ import {TreeDemo1,TreeDemo2,TreeDemo3,TreeDemo4} from './components/Ref/MdfRefer
 import {TableDemo1,TableDemo2,TableDemo3,TableDemo4} from './components/Ref/MdfReferTable'
 import {TreeTableDemo1,TreeTableDemo2,TreeTableDemo3,TreeTableDemo4} from './components/Ref/MdfReferTreeTable'
 import {JLDemo1,JLDemo2} from './components/Ref/MdfReferJiLian';
+import {SupportDemo1} from './components/Ref/MdfReferSupport';
 // 全局样式
 import './app.less';
 
@@ -74,6 +75,16 @@ class MdfReferDemo extends Component{
                 </div>
                 <div className="demo-col">
                     <JLDemo2/>
+                </div>
+                <div className="demo-col">
+                </div>
+            </div>
+            <h2>cb.utils.initSupport方式创建参照</h2>
+            <div className={`demo-row `}>
+                <div className="demo-col">
+                    <SupportDemo1/>
+                </div>
+                <div className="demo-col">
                 </div>
                 <div className="demo-col">
                 </div>
