@@ -9,7 +9,7 @@ class Demo4 extends Component{
         this.state = {
 
         }
-        this.modelOrg = new cb.models.ReferModel({
+        this.tableModel = new cb.models.ReferModel({
             cRefType:'ucf-staff-center.bd_staff_ref',
             displayname:'name',
             valueField:'id',
@@ -39,6 +39,7 @@ class Demo4 extends Component{
                 }>提交</Button>
         )
     }
+
     render(){
         const { getFieldProps, getFieldError } = this.props.form;
         return(
@@ -47,7 +48,7 @@ class Demo4 extends Component{
                 codeText={''}
                 footer={this.cardFooter() }
             >
-                <MdfRefer modelName={'refer'} model={this.modelOrg} config={this.config}
+                <MdfRefer modelName={'refer'} model={this.tableModel} config={this.config}
                  {...getFieldProps('table1', {
                     initialValue:'初始值由表格传入',
                     rules: [{

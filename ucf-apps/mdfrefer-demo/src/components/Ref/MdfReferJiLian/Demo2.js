@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import Card from '../Card';
 import MdfRefer,{cb} from '@yonyou/mdf-refer'
+import {Button} from 'tinper-bee';
 
 class Demo2 extends Component {
     constructor(props){
@@ -79,7 +80,7 @@ class Demo2 extends Component {
             <Card
                 title="级联-组织人员-多选"
                 codeText={''}
-                footer={'' }
+                 footer={''}
             >
                 <label>组织树</label> 
                 <MdfRefer 

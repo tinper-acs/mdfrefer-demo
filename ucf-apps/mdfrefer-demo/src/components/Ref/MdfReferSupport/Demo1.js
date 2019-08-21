@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import Card from '../Card';
 import MdfRefer,{cb} from '@yonyou/mdf-refer'
+import {Button} from 'tinper-bee';
 
 class Demo1 extends Component{
     constructor(props){
@@ -24,12 +25,24 @@ class Demo1 extends Component{
     afterValueChange = (data) =>{
         console.log('MdfReferTree-Demo1-afterValueChange',(data))
     }
+    footer = () =>{
+        let _this = this;
+        function getValue(){
+            return('参照选中值'+_this.modelOrg._get_data("text")+'\n完整数据'+JSON.stringify(_this.modelOrg._get_data('select')))
+        }
+        return(
+            <Button colors="primary" onClick={()=>{alert(getValue())}}>
+                提交
+            </Button>
+        )
+    }
+
     render(){
         return(
             <Card
                 title="（树）组织参照-cb.utils.initSupport创建"
                 codeText={''}
-                footer={'' }
+                 footer={this.footer()}
             >
                  {cb.utils.initSupport('refer',this.modelOrg,this.config)}
             </Card>

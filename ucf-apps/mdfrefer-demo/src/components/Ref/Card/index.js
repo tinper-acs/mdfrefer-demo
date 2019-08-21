@@ -34,7 +34,19 @@ class Card extends Component{
             document.body.style.overflow = 'auto'
         })
     }
-    render(){
+    footer = () =>{
+        let _this = this;
+        function getValue(){
+            return('参照选中值'+_this.modelOrg._get_data("text")+'\n完整数据'+JSON.stringify(_this.modelOrg._get_data('select')))
+        }
+        return(
+            <Button colors="primary" onClick={()=>{alert(getValue())}}>
+                提交
+            </Button>
+        )
+    }
+
+render(){
         const { title = '', codeText = '', footer = '' } = this.props;
         let opt = {}
         if(footer){

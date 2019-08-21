@@ -39,6 +39,7 @@ class Demo4 extends Component{
                 }>提交</Button>
         )
     }
+
     render(){
         const { getFieldProps, getFieldError } = this.props.form;
         return(
