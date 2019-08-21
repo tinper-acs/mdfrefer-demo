@@ -51,4 +51,3 @@ buck-out/
 */fastlane/screenshots
 package-lock.json
 .cache
-ucf-public
