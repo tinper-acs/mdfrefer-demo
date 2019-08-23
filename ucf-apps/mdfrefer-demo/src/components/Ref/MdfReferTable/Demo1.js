@@ -13,7 +13,7 @@ class Demo1 extends Component{
         this.tableModel = new cb.models.ReferModel({
             cRefType:'ucf-staff-center.bd_staff_ref',
             multiple:false,
-            displayname:'name',
+             displayname:'code',
         });
         this.config = {
             modelconfig:{

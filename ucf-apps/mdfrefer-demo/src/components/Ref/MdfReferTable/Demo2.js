@@ -14,7 +14,7 @@ class Demo2 extends Component{
             cRefType:'ucf-staff-center.bd_staff_ref',
             text:'冯青平',
             multiple:false,
-            displayname:'name',
+             displayname:'code',
         });
         this.config = {
             modelconfig:{

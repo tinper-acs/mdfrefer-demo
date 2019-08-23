@@ -12,9 +12,9 @@ class Demo2 extends Component{
         }
         this.modelOrg = new cb.models.ReferModel({
             cRefType:'ucf-org-center.bd_adminorgtreeviewref',
-            displayname:'name',
-            valueField:'id',
-            text:'eflong-all   eflong-all'
+             displayname:'code',
+            
+            text:'eflong-all'
            
         });
         this.config = {

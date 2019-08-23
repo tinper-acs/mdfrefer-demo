@@ -19,13 +19,13 @@ class Demo1 extends Component {
         this.model = new cb.models.ReferModel({
             cRefType:'ucf-org-center.bd_adminorgtreeviewref',
             multiple:false,
-            displayname:'name',
-            valueField:'id',
+             displayname:'code',
+            
         });
         this.model2 = new cb.models.ReferModel({
             cRefType:'ucf-staff-center.bd_staff_ref',
             multiple:false,
-            displayname:'name',
+             displayname:'code',
         });
         this.config={
             modelconfig:{

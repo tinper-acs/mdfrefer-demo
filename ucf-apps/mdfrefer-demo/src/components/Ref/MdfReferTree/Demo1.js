@@ -11,8 +11,8 @@ class Demo1 extends Component{
         }
         this.modelOrg = new cb.models.ReferModel({
             cRefType:'ucf-org-center.bd_adminorgtreeviewref',
-            displayname:'name',
-            valueField:'id',
+            displayname:'code',
+            
            
         });
         this.config = {

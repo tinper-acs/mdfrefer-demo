@@ -12,8 +12,8 @@ class Demo3 extends Component{
         }
         this.modelOrg = new cb.models.ReferModel({
             cRefType:'productcenter.pc_nomalproductref',
-            displayname:'name',
-            valueField:'id',
+             displayname:'code',
+            
             multiple:true,
            
         });

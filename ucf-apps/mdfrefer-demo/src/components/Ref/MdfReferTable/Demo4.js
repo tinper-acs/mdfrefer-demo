@@ -11,8 +11,8 @@ class Demo4 extends Component{
         }
         this.tableModel = new cb.models.ReferModel({
             cRefType:'ucf-staff-center.bd_staff_ref',
-            displayname:'name',
-            valueField:'id',
+             displayname:'code',
+            
            
         });
         this.config = {
