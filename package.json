@@ -24,7 +24,7 @@
     "ucf-cli": "1.3.1"
   },
   "dependencies": {
-    "@yonyou/mdf-refer": "0.0.4-beta.1",
+    "@yonyou/mdf-refer": "0.0.4-cn.1",
     "bee-complex-grid": "^2.0.15",
     "bee-locale": "0.0.14",
     "bee-search-panel": "2.0.13",
