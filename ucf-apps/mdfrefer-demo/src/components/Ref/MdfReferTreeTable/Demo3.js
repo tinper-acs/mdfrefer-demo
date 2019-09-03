@@ -3,7 +3,57 @@ import React, { Component } from "react";
 import Card from '../Card';
 import MdfRefer,{cb} from '@yonyou/mdf-refer'
 import {Button} from 'tinper-bee';
+const codeText = `
 
+import React, { Component } from "react";
+import MdfRefer,{cb} from '@yonyou/mdf-refer'
+import {Button} from 'tinper-bee';
+
+class Demo3 extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+
+        }
+        this.modelOrg = new cb.models.ReferModel({
+            cRefType:'productcenter.pc_nomalproductref',
+             displayname:'code',
+            
+            multiple:true,
+           
+        });
+        this.config = {
+            modelconfig:{
+                afterValueChange:this.afterValueChange,//与上面不能同时存在
+            }
+        }
+    }
+    afterValueChange = (data) =>{
+        console.log('MdfReferTree-Demo3-afterValueChange', (data))
+    }
+    footer = () =>{
+        let _this = this;
+        function getValue(){
+            return('参照选中值'+_this.modelOrg._get_data("text")+'\n完整数据'+JSON.stringify(_this.modelOrg._get_data('select')))
+        }
+        return(
+            <Button colors="primary" onClick={()=>{alert(getValue())}}>
+                提交
+            </Button>
+        )
+    }
+
+    render(){
+        return(
+            <div
+            >
+                <MdfRefer modelName={'refer'} model={this.modelOrg} config={this.config}></MdfRefer>
+            </div>
+        )
+    }
+}
+export default Demo3;
+`
 class Demo3 extends Component{
     constructor(props){
         super(props);
@@ -42,7 +92,7 @@ class Demo3 extends Component{
         return(
             <Card
                 title="（树表）物料参照-多选"
-                codeText={''}
+                codeText={codeText}
                  footer={this.footer()}
             >
                 <MdfRefer modelName={'refer'} model={this.modelOrg} config={this.config}></MdfRefer>
